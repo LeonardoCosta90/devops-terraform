@@ -22,8 +22,7 @@ module "cloudfront" {
 
 module "sqs" {
   source  = "terraform-aws-modules/sqs/aws"
-
-  name = "example"
+  name = "queue-sqs"
 
   create_dlq = true
 
